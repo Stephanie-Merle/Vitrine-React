@@ -1,0 +1,47 @@
+.photoSection {
+  display: flex;
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+}
+
+.news {
+  width: 70%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 2em;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  flex-direction: row-reverse;
+}
+.wrapping {
+  composes: photoSection;
+  flex-wrap: wrap;
+  height: 200px;
+  align-self: center;
+  margin: 5em auto;
+}
+.email {
+  color: black;
+  display: flex;
+  font-size: 2em;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+}
+.news input {
+  height: 80px;
+  border: 2px solid black;
+  padding: 1em;
+}
+.news svg {
+  height: 80px;
+  width: 120px;
+  padding: 0.3em;
+}
+.news svg:hover {
+  fill: orange;
+  cursor: pointer;
+}

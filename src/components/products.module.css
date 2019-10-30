@@ -1,0 +1,75 @@
+.products {
+  position: relative;
+  background: #c0bbba; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #5a5959,
+    #c0bbba
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #5a5959,
+    #c0bbba
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  height: auto;
+}
+.productList {
+  margin-top: 4em;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.sticker {
+  position: absolute;
+  height: 20vw;
+  width: 20vw;
+  min-width: 145px;
+  max-width: 228px;
+  min-height: 145px;
+  max-height: 228px;
+  color: white;
+  background-color: #c0bbba;
+  border: 10px solid white;
+  border-radius: 50%;
+  top: -9vw;
+  right: 4vw;
+  z-index: 100;
+  text-align: center;
+  font-size: 1.8em;
+  padding-top: 5.5vw;
+}
+
+.btnCard {
+  border-radius: 0.2em;
+  border: 2px solid #50250c;
+  background-color: #e5e5e5;
+  color: #50250c;
+  transition-duration: 0.7s;
+  cursor: pointer;
+}
+.btnBrowse {
+  composes: btnCard;
+  font-size: 1.8rem;
+  margin: 1em auto 2.5em auto;
+  padding: 0.3em 0.5em;
+}
+.btnBrowse:hover {
+  background-color: #f4ca5c;
+  color: #070707;
+  transition-duration: 0.7s;
+}
+
+.btnCollec {
+  transform: rotate(-5deg);
+  box-shadow: none;
+  height: 3rem;
+  width: 15vw;
+  min-width: 100px;
+  max-width: 170px;
+  margin-top: 2em;
+  margin-left: 2em;
+  border-radius: 0.8em;
+  background-color: #f4ca5c;
+  font-size: 1.4rem;
+}

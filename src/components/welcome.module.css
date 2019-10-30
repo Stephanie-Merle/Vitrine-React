@@ -1,0 +1,17 @@
+.welcome {
+  height: 45vh;
+  display: flex;
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  background-image: url("../assets/brand");
+}
+.welcome p {
+  display: flex;
+  text-shadow: 3px 3px 3px #50250c, 3px 3px 5px #50250c, 3px 3px 10px #50250c,
+    3px 3px 16px #50250c, 3px 3px 28px #50250c;
+  font-size: 7vmin;
+  justify-items: center;
+  margin: auto;
+  color: white;
+}

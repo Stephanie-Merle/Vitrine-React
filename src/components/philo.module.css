@@ -1,0 +1,44 @@
+.photoSection {
+  display: flex;
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+}
+.philo {
+  composes: photoSection;
+  background-image: url("../assets/office");
+  background-blend-mode: saturation;
+  color: black;
+}
+.philo p {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.philo div {
+  width: 500px;
+  justify-content: center;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.65);
+  padding: 1em 1em;
+  margin: auto;
+  border-radius: 0.5em;
+}
+.btnCard {
+  border-radius: 0.2em;
+  border: 2px solid #50250c;
+  background-color: #e5e5e5;
+  color: #50250c;
+  transition-duration: 0.7s;
+  cursor: pointer;
+}
+.btnRead {
+  composes: btnCard;
+  font-size: 1.8rem;
+  margin: 0.5em auto;
+  padding: 0.1em 0.5em;
+}
+.btnRead:hover {
+  background-color: #f4ca5c;
+  color: #070707;
+  transition-duration: 0.7s;
+}

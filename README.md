@@ -1,3 +1,14 @@
+# VITRINE PROJECT WITH REACT
+
+Same vitrine project build with REACT.js
+Responsive product showcase.
+
+## Author
+
+- [Stephanie Merle](https://github.com/Stephanie-Merle)
+
+### Creat-React-App informations
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

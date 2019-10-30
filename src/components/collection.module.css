@@ -1,0 +1,51 @@
+.collection {
+  overflow: hidden;
+  height: 120px;
+  display: flex;
+  width: 100%;
+}
+
+.collection .btnMore {
+  font-size: 1.5rem;
+  border: none;
+  background: none;
+  margin: 2.5em 2em auto auto;
+  align-self: center;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+.collection .btnMore:hover {
+  background-color: #f8f0de;
+  border-radius: 20%;
+  box-shadow: 3px 3px 3px #f8f0de;
+}
+.btnMore svg {
+  margin-left: 1em;
+  color: #50250c;
+}
+.collecScroll {
+  height: auto;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  background-color: rgb(255, 255, 255);
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  margin-bottom: 2em;
+}
+.collecScroll::-webkit-scrollbar {
+  display: none;
+}
+.btnCollec {
+  transform: rotate(-5deg);
+  box-shadow: none;
+  height: 3rem;
+  width: 15vw;
+  min-width: 100px;
+  max-width: 170px;
+  margin-top: 2em;
+  margin-left: 2em;
+  border-radius: 0.8em;
+  background-color: #f4ca5c;
+  font-size: 1.4rem;
+}

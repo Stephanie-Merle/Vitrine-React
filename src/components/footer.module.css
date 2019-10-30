@@ -1,0 +1,15 @@
+.foot {
+  display: flex;
+  margin: auto;
+  padding: 0.8em 2em;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-color: #f4ca5c;
+  text-align: center;
+  height: auto;
+}
+.foot span {
+  justify-content: flex-end;
+  margin-left: auto;
+}

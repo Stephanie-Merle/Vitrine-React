@@ -1,0 +1,118 @@
+.productList {
+  margin-top: 4em;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.productCard {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 2em auto;
+  background-color: #e5e5e5;
+  border-radius: 0.5em;
+  width: 45%;
+  height: 45vw;
+  text-align: center;
+  justify-content: space-around;
+  font-size: 1.5rem;
+}
+.productCard p {
+  margin: auto 0.3em;
+}
+.productCard:hover .cardProduct {
+  width: 100%;
+  height: 80%;
+  background-position: bottom;
+  transition-duration: 1s;
+}
+
+.cardProduct {
+  display: flex;
+  width: 90%;
+  height: 80%;
+  background-position: center;
+  background-size: cover;
+  transition-duration: 1s;
+}
+.product1 {
+  composes: cardProduct;
+  background-image: url("../assets/collection/front/string-bag-brown.jpg");
+}
+.product2 {
+  composes: cardProduct;
+  background-image: url("../assets/collection/front/ring-bag-black.jpg");
+}
+.product3 {
+  composes: cardProduct;
+  background-image: url("../assets/collection/front/fancy-bag-pink.jpg");
+}
+.product4 {
+  composes: cardProduct;
+  background-image: url("../assets/collection/front/classic-bag-green.jpg");
+}
+.product5 {
+  composes: cardProduct;
+  background-image: url("../assets/collection/front/classic-bag-red.jpg");
+}
+.colors {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+}
+.brown {
+  background-color: #a15927;
+  border: 3px solid rgb(255, 255, 255);
+}
+.black {
+  background-color: #111110;
+  border: 3px solid rgb(255, 255, 255);
+}
+.lightpink {
+  background-color: #dab3aa;
+  border: 3px solid rgb(255, 255, 255);
+}
+.green {
+  background-color: #193135;
+  border: 3px solid rgb(255, 255, 255);
+}
+.orange {
+  background-color: #d08706;
+  border: 3px solid rgb(255, 255, 255);
+}
+.darkred {
+  background-color: #571119;
+  border: 3px solid rgb(255, 255, 255);
+}
+
+.btnCard {
+  border-radius: 0.2em;
+  border: 2px solid #50250c;
+  background-color: #e5e5e5;
+  color: #50250c;
+  transition-duration: 0.7s;
+  cursor: pointer;
+}
+
+.btnCard {
+  border-radius: 0.2em;
+  border: 2px solid #50250c;
+  background-color: #e5e5e5;
+  color: #50250c;
+  transition-duration: 0.7s;
+  cursor: pointer;
+}
+.btnBuy {
+  composes: btnCard;
+  min-height: 40px;
+  min-width: 60px;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: auto 1em;
+}
+.btnBuy:hover {
+  background-color: #f4ca5c;
+  color: #070707;
+  transition-duration: 0.7s;
+}

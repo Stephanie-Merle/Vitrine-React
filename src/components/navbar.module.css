@@ -1,0 +1,121 @@
+body {
+  font-family: "Indie Flower", cursive, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  color: #50250c;
+  overflow-x: hidden;
+  min-width: 400px;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  height: 5vw;
+  min-height: 60px;
+}
+nav {
+  display: flex;
+  font-size: 1.5rem;
+  flex: auto;
+}
+header * {
+  padding: 0.1em 0.5em;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+header ul {
+  display: flex;
+  flex-direction: row;
+}
+header ul li:hover {
+  background-color: #f8f0de;
+  border-radius: 45%;
+  box-shadow: 3px 3px 3px #f8f0de;
+}
+
+header span {
+  justify-content: flex-end;
+  margin-left: auto;
+}
+header h1 {
+  color: #50250c;
+  text-shadow: 3px 3px 3px #f4ca5c, 3px 3px 5px #f4ca5c, 3px 3px 15px #f4ca5c,
+    3px 3px 18px #f4ca5c;
+  text-decoration: none;
+  font-size: 1.7rem;
+  margin-left: 1em;
+  margin-top: auto;
+  margin-bottom: auto;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.cart {
+  position: relative;
+}
+.count {
+  font-size: 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 600;
+  padding-left: 0.5em;
+  text-align: center;
+  margin: auto;
+  position: absolute;
+  top: 0.3rem;
+  right: 0.5rem;
+  height: 30px;
+  width: 30px;
+  background-color: #f4ca5c;
+  border: 1px solid black;
+  z-index: 100;
+  border-radius: 50%;
+}
+.drawer {
+  position: absolute;
+  top: -250px;
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: rgba(255, 255, 255, 0.534);
+  font-size: 1.5em;
+  width: 100%;
+  margin-top: 60px;
+  height: 150px;
+}
+.drawer ul {
+  flex-direction: column;
+  justify-content: space-around;
+  margin: auto;
+  height: 100%;
+}
+.hamburger {
+  position: absolute;
+  right: 5px;
+  display: none;
+}
+.menu {
+  top: 0px;
+}
+header nav svg:hover {
+  cursor: pointer;
+  background-color: #f8f0de;
+  box-shadow: 3px 3px 3px #f8f0de;
+  border-radius: 50%;
+}
+@media screen and (max-width: 770px) {
+  header span ul,
+  .cart {
+    display: none;
+    visibility: hidden;
+  }
+  header h1 {
+    font-size: 1.3rem;
+    flex-shrink: 0;
+  }
+  header nav svg {
+    width: 45px;
+    height: 45px;
+  }
+  .hamburger {
+    display: block;
+  }
+}
