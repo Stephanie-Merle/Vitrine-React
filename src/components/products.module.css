@@ -73,3 +73,6 @@
   background-color: #f4ca5c;
   font-size: 1.4rem;
 }
+.productCard img {
+  overflow: hidden;
+}

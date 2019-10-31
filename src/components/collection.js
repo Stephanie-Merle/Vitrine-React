@@ -1,6 +1,11 @@
 import React from "react";
 import Style from "./collection.module.css";
 import CollecCart from "./collec-cart";
+import image1 from "../assets//collection/bandouliere-back-to-school.jpg";
+import image2 from "../assets//collection/bandouliere-poignee-metal-et-bi-matiere.jpg";
+import image3 from "../assets//collection/cabas-bi-matiere-poche-devant-avec-foulard.jpg";
+import image4 from "../assets//collection/sac-cabas-detail-tresse.jpg";
+import image5 from "../assets//collection/shopper-bi-matiere-details-clous.jpg";
 
 const Collection = () => {
   return (
@@ -27,12 +32,13 @@ const Collection = () => {
         </button>
       </div>
       <div className={Style.collecScroll}>
-        {/* creer collec carts inside the scroll */}
-        <CollecCart img="1" />
-        <CollecCart img="2" />
-        <CollecCart img="3" />
-        <CollecCart img="4" />
-        <CollecCart img="5" />
+        {/* create collec carts inside the scroll */}
+        <CollecCart img={image1} />
+        <CollecCart img={image2} />
+        <CollecCart img={image3} />
+        <CollecCart img={image4} />
+        <CollecCart img={image5} />
+
         {/* fin scroll element */}
       </div>
     </section>

@@ -1,30 +1,23 @@
 import React from "react";
 import Style from "./product-card.module.css";
+import Color from "./colors-display";
 
 const ProductCard = props => {
-  let myClass;
-  if (props.img === "1") {
-    myClass = Style.product1;
-  } else if (props.img === "2") {
-    myClass = Style.product2;
-  } else if (props.img === "3") {
-    myClass = Style.product3;
-  } else if (props.img === "4") {
-    myClass = Style.product4;
-  } else if (props.img === "5") {
-    myClass = Style.product5;
-  }
   return (
     <div className={Style.productCard}>
-      <p>Ginger</p>
+      <p>{props.name}</p>
       <p>colors :</p>
-      <div className={Style.colors}></div>
-      <div className={Style.colors}></div>
-      <div className={Style.colors}></div>
-      <div className={Style.colors}></div>
+      {/* create a color component */}
+      <Color color={props.color1} />
+      <Color color={props.color2} />
+      <Color color={props.color3} />
+      <Color color={props.color4} />
+
       <p>{props.price} $</p>
       <button className={Style.btnBuy}>SHOP IT</button>
-      <div className={myClass}></div>
+      <div className={Style.container}>
+        <img src={props.img} alt="this product" />
+      </div>
     </div>
   );
 };

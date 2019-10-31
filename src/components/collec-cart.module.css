@@ -18,32 +18,22 @@
 }
 /* to automate with JS to go tho server data  */
 .cartImage {
-  width: 80%;
   height: 80%;
+  width: 80%;
+  overflow: hidden;
   margin: 0.7em auto;
-  background-size: cover;
-  background-position: bottom;
-  border-radius: 0.5em;
-  border: 10px solid rgba(255, 255, 255, 0.685);
+  border-radius: 0.7em;
+}
+.cartImage img {
+  height: 100%;
+  width: auto;
 }
 
-.cartImage1 {
-  composes: cartImage;
-  background-image: url("../assets//collection/bandouliere-back-to-school.jpg");
-}
-.cartImage2 {
-  composes: cartImage;
-  background-image: url("../assets/collection/bandouliere-poignee-metal-et-bi-matiere.jpg");
-}
-.cartImage3 {
-  composes: cartImage;
-  background-image: url("../assets/collection/cabas-bi-matiere-poche-devant-avec-foulard.jpg");
-}
-.cartImage4 {
-  composes: cartImage;
-  background-image: url("../assets/collection/sac-cabas-detail-tresse.jpg");
-}
-.cartImage5 {
-  composes: cartImage;
-  background-image: url("../assets/collection/shopper-bi-matiere-details-clous.jpg");
+@media screen and (max-width: 770px) {
+  .collecCart {
+    width: 70vw;
+    height: 80vw;
+    margin: 1em;
+    font-size: 2rem;
+  }
 }
