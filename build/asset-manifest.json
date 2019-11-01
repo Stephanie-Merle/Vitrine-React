@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.e180f41b.chunk.css",
-    "main.js": "/static/js/main.214897ac.chunk.js",
-    "main.js.map": "/static/js/main.214897ac.chunk.js.map",
+    "main.js": "/static/js/main.337708f4.chunk.js",
+    "main.js.map": "/static/js/main.337708f4.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.6a028c11.js",
     "runtime-main.js.map": "/static/js/runtime-main.6a028c11.js.map",
     "static/js/2.59dcd3f9.chunk.js": "/static/js/2.59dcd3f9.chunk.js",
     "static/js/2.59dcd3f9.chunk.js.map": "/static/js/2.59dcd3f9.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.fb717630bd56265bb1ee5c812275307b.js": "/precache-manifest.fb717630bd56265bb1ee5c812275307b.js",
+    "precache-manifest.63f0bd2fa23724e202e5c2fb631face8.js": "/precache-manifest.63f0bd2fa23724e202e5c2fb631face8.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.e180f41b.chunk.css.map": "/static/css/main.e180f41b.chunk.css.map",
     "static/media/bandouliere-back-to-school.jpg": "/static/media/bandouliere-back-to-school.0750d39c.jpg",
@@ -27,6 +27,6 @@
     "static/js/runtime-main.6a028c11.js",
     "static/js/2.59dcd3f9.chunk.js",
     "static/css/main.e180f41b.chunk.css",
-    "static/js/main.214897ac.chunk.js"
+    "static/js/main.337708f4.chunk.js"
   ]
 }

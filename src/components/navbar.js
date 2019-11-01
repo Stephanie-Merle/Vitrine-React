@@ -5,7 +5,7 @@ const Navbar = props => {
   return (
     <header className={Style.header}>
       <h1 onClick={props.head}>TRENDY BAGS</h1>
-      <nav onClick={props.close}>
+      <nav>
         <svg
           onClick={props.edit}
           xmlns="http://www.w3.org/2000/svg"

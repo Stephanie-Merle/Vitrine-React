@@ -27,6 +27,11 @@ class Layout extends Component {
     this.setState({ showDrawer: false });
   };
 
+  closeAll = () => {
+    this.setState({ showEdit: false });
+    this.setState({ showDrawer: false });
+  };
+
   render() {
     let page = <First close={this.closeDrawer} />;
     if (this.state.showEdit) {
@@ -37,10 +42,10 @@ class Layout extends Component {
         <Navbar
           clicked={this.hamburgerHandler}
           edit={this.editHandler}
-          head={this.closeEdit}
-          close={(this.closeEdit, this.closeDrawer)}
+          head={this.closeAll}
+          close={this.closeEdit}
         />
-        <Drawer open={this.state.showDrawer} close={this.closeEdit} />
+        <Drawer open={this.state.showDrawer} close={this.closeAll} />
         {page}
         {/* footer  */}
         <Footer />
