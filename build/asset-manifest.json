@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.08d5ec32.chunk.css",
+    "main.js": "/static/js/main.fa7c5b9f.chunk.js",
+    "main.js.map": "/static/js/main.fa7c5b9f.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.6a028c11.js",
+    "runtime-main.js.map": "/static/js/runtime-main.6a028c11.js.map",
+    "static/js/2.59dcd3f9.chunk.js": "/static/js/2.59dcd3f9.chunk.js",
+    "static/js/2.59dcd3f9.chunk.js.map": "/static/js/2.59dcd3f9.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.0944de32bd3e23ab10250aec90cd0cdc.js": "/precache-manifest.0944de32bd3e23ab10250aec90cd0cdc.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.08d5ec32.chunk.css.map": "/static/css/main.08d5ec32.chunk.css.map",
+    "static/media/bandouliere-back-to-school.jpg": "/static/media/bandouliere-back-to-school.0750d39c.jpg",
+    "static/media/bandouliere-poignee-metal-et-bi-matiere.jpg": "/static/media/bandouliere-poignee-metal-et-bi-matiere.8bdd8c3c.jpg",
+    "static/media/welcome.module.css": "/static/media/brand.d0d76eb4.bin",
+    "static/media/cabas-bi-matiere-poche-devant-avec-foulard.jpg": "/static/media/cabas-bi-matiere-poche-devant-avec-foulard.2187cb46.jpg",
+    "static/media/classic-bag-green.jpg": "/static/media/classic-bag-green.16f7e151.jpg",
+    "static/media/fancy-bag-pink.jpg": "/static/media/fancy-bag-pink.836c4c46.jpg",
+    "static/media/philo.module.css": "/static/media/office.11ec2ce6.bin",
+    "static/media/ring-bag-black.jpg": "/static/media/ring-bag-black.863ca06f.jpg",
+    "static/media/sac-cabas-detail-tresse.jpg": "/static/media/sac-cabas-detail-tresse.8647209d.jpg",
+    "static/media/shopper-bi-matiere-details-clous.jpg": "/static/media/shopper-bi-matiere-details-clous.dc3e1894.jpg",
+    "static/media/string-bag-brown.jpg": "/static/media/string-bag-brown.1cc7fd14.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6a028c11.js",
+    "static/js/2.59dcd3f9.chunk.js",
+    "static/css/main.08d5ec32.chunk.css",
+    "static/js/main.fa7c5b9f.chunk.js"
+  ]
+}

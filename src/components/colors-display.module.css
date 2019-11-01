@@ -5,25 +5,35 @@
 }
 .brown {
   background-color: #a15927;
-  border: 3px solid rgb(255, 255, 255);
 }
 .black {
   background-color: #111110;
-  border: 3px solid rgb(255, 255, 255);
 }
 .lightpink {
   background-color: #dab3aa;
-  border: 3px solid rgb(255, 255, 255);
 }
 .green {
   background-color: #193135;
-  border: 3px solid rgb(255, 255, 255);
 }
 .orange {
   background-color: #d08706;
-  border: 3px solid rgb(255, 255, 255);
 }
 .darkred {
   background-color: #571119;
+}
+.brown,
+.black,
+.lightpink,
+.green,
+.orange,
+.darkred {
   border: 3px solid rgb(255, 255, 255);
+}
+.brown:hover,
+.black:hover,
+.lightpink:hover,
+.green:hover,
+.orange:hover,
+.darkred:hover {
+  border: 3px solid #444242;
 }

@@ -4,9 +4,10 @@ import Style from "./navbar.module.css";
 const Navbar = props => {
   return (
     <header className={Style.header}>
-      <h1>TRENDY BAGS</h1>
+      <h1 onClick={props.close}>TRENDY BAGS</h1>
       <nav>
         <svg
+          onClick={props.edit}
           xmlns="http://www.w3.org/2000/svg"
           width="54"
           height="54"
@@ -23,13 +24,19 @@ const Navbar = props => {
         <span>
           <ul>
             <li>
-              <a href="#collection">Collection</a>
+              <a href="#collection" onClick={props.close}>
+                Collection
+              </a>
             </li>
             <li>
-              <a href="#products">Products</a>
+              <a href="#products" onClick={props.close}>
+                Products
+              </a>
             </li>
             <li>
-              <a href="#philo">Philosophy</a>
+              <a href="#philo" onClick={props.close}>
+                Philosophy
+              </a>
             </li>
           </ul>
           <div className={Style.cart}>
