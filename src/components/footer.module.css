@@ -13,3 +13,12 @@
   justify-content: flex-end;
   margin-left: auto;
 }
+@media screen and (max-width: 770px) {
+  .foot {
+    flex-direction: column;
+  }
+  .foot span {
+    justify-content: center;
+    margin: auto;
+  }
+}

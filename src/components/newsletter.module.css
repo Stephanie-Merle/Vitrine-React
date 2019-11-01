@@ -45,3 +45,28 @@
   fill: orange;
   cursor: pointer;
 }
+@media screen and (max-width: 770px) {
+  .news input {
+    margin-top: auto;
+    height: 50px;
+    width: 100%;
+  }
+  input::placeholder {
+    font-size: 1rem;
+  }
+  .news {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .news svg {
+    align-self: center;
+  }
+  .email {
+    font-size: 1.6em;
+  }
+}
+@media screen and (max-width: 470px) {
+  .email {
+    font-size: 1em;
+  }
+}

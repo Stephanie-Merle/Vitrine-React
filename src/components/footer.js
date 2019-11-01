@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div className={Style.foot}>
       {"< / M a d e _ w i t h _ l o v e / >"}
-      <span>2 0 1 9</span>
+      <span>LE REACTEUR 2 0 1 9</span>
     </div>
   );
 };

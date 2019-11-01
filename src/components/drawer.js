@@ -13,13 +13,19 @@ const Drawer = props => {
     <div id="myDrawer" className={mode}>
       <ul>
         <li>
-          <a href="#collection">Collection</a>
+          <a onClick={props.close} href="#collection">
+            Collection
+          </a>
         </li>
         <li>
-          <a href="#products">Products</a>
+          <a onClick={props.close} href="#products">
+            Products
+          </a>
         </li>
         <li>
-          <a href="#philo">Philosophy</a>
+          <a onClick={props.close} href="#philo">
+            Philosophy
+          </a>
         </li>
       </ul>
     </div>

@@ -9,7 +9,7 @@ const First = props => {
   return (
     <>
       {/* welcome */}
-      <Welcome />
+      <Welcome close={props.close} />
       {/* collection */}
       <Collection />
       {/* products */}

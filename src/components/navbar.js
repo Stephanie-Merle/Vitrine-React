@@ -4,8 +4,8 @@ import Style from "./navbar.module.css";
 const Navbar = props => {
   return (
     <header className={Style.header}>
-      <h1 onClick={props.close}>TRENDY BAGS</h1>
-      <nav>
+      <h1 onClick={props.head}>TRENDY BAGS</h1>
+      <nav onClick={props.close}>
         <svg
           onClick={props.edit}
           xmlns="http://www.w3.org/2000/svg"
@@ -77,19 +77,6 @@ const Navbar = props => {
         <line x1="3" y1="6" x2="21" y2="6"></line>
         <line x1="3" y1="18" x2="21" y2="18"></line>
       </svg>
-      <div id="myDrawer" className={Style.drawer}>
-        <ul>
-          <li>
-            <a href="#collection">Collection</a>
-          </li>
-          <li>
-            <a href="#products">Products</a>
-          </li>
-          <li>
-            <a href="#philo">Philosophy</a>
-          </li>
-        </ul>
-      </div>
     </header>
   );
 };
