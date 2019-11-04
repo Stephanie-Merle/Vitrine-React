@@ -14,7 +14,9 @@ const ProductCard = props => {
       <Color color={props.color4} />
 
       <p>{props.price} $</p>
-      <button className={Style.btnBuy}>SHOP IT</button>
+      <button className={Style.btnBuy} onClick={props.count}>
+        SHOP IT
+      </button>
       <div className={Style.container}>
         <img src={props.img} alt="this product" />
       </div>

@@ -6,7 +6,7 @@ import image2 from "../assets/collection/front/ring-bag-black.jpg";
 import image3 from "../assets/collection/front/fancy-bag-pink.jpg";
 import image4 from "../assets/collection/front/classic-bag-green.jpg";
 
-const Products = () => {
+const Products = props => {
   return (
     <div id="products" className={Style.products}>
       <div className={Style.sticker} id="sticker">
@@ -23,6 +23,7 @@ const Products = () => {
           name="Ginger"
           img={image1}
           price="18.00"
+          count={props.count}
           color1="1"
           color2="3"
           color3="6"
@@ -32,6 +33,7 @@ const Products = () => {
           name="Carole"
           img={image2}
           price="35.00"
+          count={props.count}
           color1="2"
           color2=""
           color3=""
@@ -41,6 +43,7 @@ const Products = () => {
           name="Emma"
           img={image3}
           price="26.00"
+          count={props.count}
           color1="3"
           color2="1"
           color3=""
@@ -50,6 +53,7 @@ const Products = () => {
           name="Olivia"
           img={image4}
           price="15.00"
+          count={props.count}
           color1="4"
           color2="6"
           color3=""

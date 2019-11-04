@@ -18,7 +18,7 @@ const Navbar = props => {
           stroke-linecap="round"
           stroke-linejoin="round"
         >
-          <polygon points="14 2 18 6 7 17 3 17 3 13 14 2"></polygon>
+          <polygon points="14 2 18 6 7 17 3 17 3 13 14 2">0</polygon>
           <line x1="3" y1="22" x2="21" y2="22"></line>
         </svg>
         <span>
@@ -40,7 +40,7 @@ const Navbar = props => {
             </li>
           </ul>
           <div className={Style.cart}>
-            <div className={Style.count}>{props.count}</div>
+            <div className={Style.count}>{props.counter}</div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="60"

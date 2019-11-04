@@ -33,8 +33,14 @@ class Layout extends Component {
     this.setState({ showDrawer: false });
   };
 
+  incrementCounter = () => {
+    let value = this.state.counter;
+    value++;
+    this.setState({ counter: value });
+  };
+
   render() {
-    let page = <First close={this.closeDrawer} />;
+    let page = <First close={this.closeDrawer} count={this.incrementCounter} />;
     if (this.state.showEdit) {
       page = <Edit />;
     }
@@ -45,7 +51,7 @@ class Layout extends Component {
           edit={this.editHandler}
           head={this.closeAll}
           close={this.closeEdit}
-          count={this.state.counter}
+          counter={this.state.counter}
         />
         <Drawer open={this.state.showDrawer} close={this.closeAll} />
         {page}
