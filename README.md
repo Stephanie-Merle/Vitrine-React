@@ -2,6 +2,7 @@
 
 Same vitrine project build with REACT.js
 Responsive product showcase.
+https://checkmybags.netlify.com/
 
 ## Author
 
