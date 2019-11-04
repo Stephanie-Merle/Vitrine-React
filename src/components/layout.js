@@ -1,64 +1,60 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import Navbar from "./navbar";
 import Footer from "./footer";
 import Drawer from "./drawer";
 import First from "./first-page";
 import Edit from "./edit-database";
 
-class Layout extends Component {
-  state = {
-    showDrawer: false,
-    showEdit: false,
-    counter: 0
-  };
-  hamburgerHandler = () => {
-    let visibility = this.state.showDrawer;
-    this.setState({ showDrawer: !visibility });
+const Layout = () => {
+  const [showDrawer, setDrawer] = useState(false);
+  const [showEdit, setEdit] = useState(false);
+  const [counter, setCount] = useState(0);
+
+  const hamburgerHandler = () => {
+    let visibility = showDrawer;
+    setDrawer(!visibility);
   };
 
-  editHandler = () => {
-    let visibility = this.state.showEdit;
-    this.setState({ showEdit: !visibility });
-    this.setState({ showDrawer: false });
+  const editHandler = () => {
+    let visibility = showEdit;
+    setEdit(!visibility);
+    setDrawer(false);
   };
-  closeEdit = () => {
-    this.setState({ showEdit: false });
+  const closeEdit = () => {
+    setEdit(false);
   };
-  closeDrawer = () => {
-    this.setState({ showDrawer: false });
-  };
-
-  closeAll = () => {
-    this.setState({ showEdit: false });
-    this.setState({ showDrawer: false });
+  const closeDrawer = () => {
+    setDrawer(false);
   };
 
-  incrementCounter = () => {
-    let value = this.state.counter;
-    value++;
-    this.setState({ counter: value });
+  const closeAll = () => {
+    setEdit(false);
+    setDrawer(false);
   };
 
-  render() {
-    let page = <First close={this.closeDrawer} count={this.incrementCounter} />;
-    if (this.state.showEdit) {
-      page = <Edit />;
-    }
-    return (
-      <div>
-        <Navbar
-          clicked={this.hamburgerHandler}
-          edit={this.editHandler}
-          head={this.closeAll}
-          close={this.closeEdit}
-          counter={this.state.counter}
-        />
-        <Drawer open={this.state.showDrawer} close={this.closeAll} />
-        {page}
-        {/* footer  */}
-        <Footer />
-      </div>
-    );
+  const incrementCounter = () => {
+    setCount(counter + 1);
+  };
+
+  let page = <First close={closeDrawer} count={incrementCounter} />;
+  if (showEdit) {
+    page = <Edit />;
   }
-}
+  return (
+    <div>
+      <Navbar
+        clicked={hamburgerHandler}
+        edit={editHandler}
+        head={closeAll}
+        close={closeEdit}
+        counter={counter}
+      />
+      <Drawer open={showDrawer} close={closeAll} />
+      {page}
+      {/* footer  */}
+      <Footer />
+    </div>
+  );
+};
+
 export default Layout;
