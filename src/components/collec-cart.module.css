@@ -12,9 +12,11 @@
   font-size: 1.3rem;
   justify-content: center;
   text-decoration: underline 5px #dfd0bf;
+  -webkit-text-decoration: underline 5px #dfd0bf;
 }
 .collecCart p:hover {
   text-decoration: underline 5px #f4ca5c;
+  -webkit-text-decoration: underline 5px #f4ca5c;
 }
 /* to automate with JS to go tho server data  */
 .cartImage {

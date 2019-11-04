@@ -8,7 +8,8 @@ import Edit from "./edit-database";
 class Layout extends Component {
   state = {
     showDrawer: false,
-    showEdit: false
+    showEdit: false,
+    counter: 0
   };
   hamburgerHandler = () => {
     let visibility = this.state.showDrawer;
@@ -44,6 +45,7 @@ class Layout extends Component {
           edit={this.editHandler}
           head={this.closeAll}
           close={this.closeEdit}
+          count={this.state.counter}
         />
         <Drawer open={this.state.showDrawer} close={this.closeAll} />
         {page}

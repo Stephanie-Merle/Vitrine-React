@@ -40,7 +40,7 @@ const Navbar = props => {
             </li>
           </ul>
           <div className={Style.cart}>
-            <div className={Style.count}>2</div>
+            <div className={Style.count}>{props.count}</div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="60"
