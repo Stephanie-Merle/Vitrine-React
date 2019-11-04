@@ -6,17 +6,13 @@ class Edit extends Component {
   state = {
     products: [],
     categories: [],
-    showCat: true
+    showCat: false
   };
-
-  // For now we can get products from db but not categories.
-  // also need to use context to set product counter when clicking on BUY button
 
   componentDidMount() {
     axios
       .get("http://localhost:3000/product/")
       .then(res => {
-        console.log(res.data);
         const fetchedProducts = [];
         for (let key in res.data) {
           fetchedProducts.push({ ...res.data[key], id: key });
@@ -34,7 +30,7 @@ class Edit extends Component {
         Object.keys(list).map(catKey => {
           arr.push(list[catKey]);
         });
-        // this.setState({ categories: arr });
+
         console.log(arr);
       })
       .catch(err => {
@@ -42,13 +38,51 @@ class Edit extends Component {
       });
   }
 
+  // readCategories() {
+  //   axios
+  //     .get("http://localhost:3000/category/")
+  //     .then(res => {
+  //       const arr = [];
+  //       const list = res.data;
+  //       Object.keys(list).map(catKey => {
+  //         arr.push(list[catKey]);
+  //       });
+  //       // this.setState({ categories: arr });
+  //       console.log(arr);
+  //     })
+  //     .catch(err => {
+  //       console.log(err.message);
+  //     });
+  // }
   render() {
+    // const Display;
+    // Display = (
+    //     Our products:
+    //     {this.state.products.map(product => (
+    //       <div className={Style.product}>
+    //         <p>
+    //           {product.title} : {product._id}
+    //         </p>
+    //         <p>Description : {product.description}</p>
+    //         <p>Category : {product.category.title}</p>
+    //         <p>Price : {product.price}</p>
+    //       </div>
+    //     ))}
+    //   </div>
+    // );
+    // if (this.state.showCat) {
     const Display = (
       <div>
-        Our Categories:
-        <div className={Style.product}>
-          <p>{this.state.categories}</p>
-        </div>
+        Our Products:
+        {this.state.products.map(product => (
+          <div className={Style.product}>
+            <p>
+              {product.title} : {product._id}
+            </p>
+            <p>Category : {product.category.title}</p>
+            <p>Price : {product.price}</p>
+          </div>
+        ))}
       </div>
     );
 
