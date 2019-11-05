@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.e180f41b.chunk.css",
-    "main.js": "/static/js/main.337708f4.chunk.js",
-    "main.js.map": "/static/js/main.337708f4.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.6a028c11.js",
-    "runtime-main.js.map": "/static/js/runtime-main.6a028c11.js.map",
-    "static/js/2.59dcd3f9.chunk.js": "/static/js/2.59dcd3f9.chunk.js",
-    "static/js/2.59dcd3f9.chunk.js.map": "/static/js/2.59dcd3f9.chunk.js.map",
+    "main.css": "/static/css/main.c7e84f84.chunk.css",
+    "main.js": "/static/js/main.01f9e73e.chunk.js",
+    "main.js.map": "/static/js/main.01f9e73e.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.fd3a8185.js",
+    "runtime-main.js.map": "/static/js/runtime-main.fd3a8185.js.map",
+    "static/js/2.2f89a78b.chunk.js": "/static/js/2.2f89a78b.chunk.js",
+    "static/js/2.2f89a78b.chunk.js.map": "/static/js/2.2f89a78b.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.63f0bd2fa23724e202e5c2fb631face8.js": "/precache-manifest.63f0bd2fa23724e202e5c2fb631face8.js",
+    "precache-manifest.dd575b3b9d0f62458b57e15cedb0a228.js": "/precache-manifest.dd575b3b9d0f62458b57e15cedb0a228.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.e180f41b.chunk.css.map": "/static/css/main.e180f41b.chunk.css.map",
+    "static/css/main.c7e84f84.chunk.css.map": "/static/css/main.c7e84f84.chunk.css.map",
     "static/media/bandouliere-back-to-school.jpg": "/static/media/bandouliere-back-to-school.0750d39c.jpg",
     "static/media/bandouliere-poignee-metal-et-bi-matiere.jpg": "/static/media/bandouliere-poignee-metal-et-bi-matiere.8bdd8c3c.jpg",
     "static/media/welcome.module.css": "/static/media/brand.d0d76eb4.bin",
@@ -24,9 +24,9 @@
     "static/media/string-bag-brown.jpg": "/static/media/string-bag-brown.1cc7fd14.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.6a028c11.js",
-    "static/js/2.59dcd3f9.chunk.js",
-    "static/css/main.e180f41b.chunk.css",
-    "static/js/main.337708f4.chunk.js"
+    "static/js/runtime-main.fd3a8185.js",
+    "static/js/2.2f89a78b.chunk.js",
+    "static/css/main.c7e84f84.chunk.css",
+    "static/js/main.01f9e73e.chunk.js"
   ]
 }

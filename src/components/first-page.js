@@ -13,7 +13,7 @@ const First = props => {
       {/* collection */}
       <Collection />
       {/* products */}
-      <Products count={props.count} />
+      <Products />
       {/* philosophy */}
       <Philosophy />
       {/* newsletter */}
