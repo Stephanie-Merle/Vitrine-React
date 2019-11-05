@@ -1,6 +1,7 @@
 import React from "react";
 import Style from "./product-card.module.css";
 import Color from "./colors-display";
+import { BasketConsumer } from "./context/basket-context";
 
 const ProductCard = props => {
   return (
@@ -14,9 +15,14 @@ const ProductCard = props => {
       <Color color={props.color4} />
 
       <p>{props.price} $</p>
-      <button className={Style.btnBuy} onClick={props.count}>
-        SHOP IT
-      </button>
+      <BasketConsumer>
+        {context => (
+          <button className={Style.btnBuy} onClick={context.update}>
+            SHOP IT
+          </button>
+        )}
+      </BasketConsumer>
+
       <div className={Style.container}>
         <img src={props.img} alt="this product" />
       </div>

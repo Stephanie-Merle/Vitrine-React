@@ -1,5 +1,6 @@
 import React from "react";
 import Style from "./navbar.module.css";
+import { BasketConsumer } from "./context/basket-context";
 
 const Navbar = props => {
   return (
@@ -40,7 +41,10 @@ const Navbar = props => {
             </li>
           </ul>
           <div className={Style.cart}>
-            <div className={Style.count}>{props.counter}</div>
+            <BasketConsumer>
+              {context => <div className={Style.count}>{context.data}</div>}
+            </BasketConsumer>
+
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="60"

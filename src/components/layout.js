@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { BasketProvider } from "./context/basket-context";
 import Navbar from "./navbar";
 import Footer from "./footer";
 import Drawer from "./drawer";
@@ -6,6 +7,9 @@ import First from "./first-page";
 import Edit from "./edit-database";
 
 const Layout = () => {
+  // const [inputState, setInputState] = useState(default state) is array destructuring form of:
+  // const inputState = useState(default state)
+
   const [showDrawer, setDrawer] = useState(false);
   const [showEdit, setEdit] = useState(false);
   const [counter, setCount] = useState(0);
@@ -36,19 +40,30 @@ const Layout = () => {
     setCount(counter + 1);
   };
 
-  let page = <First close={closeDrawer} count={incrementCounter} />;
+  let page = (
+    <BasketProvider
+      value={{
+        update: () => {
+          setCount(counter + 1);
+        }
+      }}
+    >
+      <First close={closeDrawer} />
+    </BasketProvider>
+  );
   if (showEdit) {
     page = <Edit />;
   }
   return (
     <div>
-      <Navbar
-        clicked={hamburgerHandler}
-        edit={editHandler}
-        head={closeAll}
-        close={closeEdit}
-        counter={counter}
-      />
+      <BasketProvider value={{ data: counter }}>
+        <Navbar
+          clicked={hamburgerHandler}
+          edit={editHandler}
+          head={closeAll}
+          close={closeEdit}
+        />
+      </BasketProvider>
       <Drawer open={showDrawer} close={closeAll} />
       {page}
       {/* footer  */}
